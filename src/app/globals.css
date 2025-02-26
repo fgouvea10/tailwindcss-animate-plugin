@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@plugin 'tailwindcss-animate';
+
+@theme {
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --text-2xs: 0.625rem;
+  --text-3xs: 0.5rem;
+
+  --aspect-4/3: 4/3;
+
+  --radius-4xl: 2rem;
+
+  --spacing-18: 4.5rem;
+  --spacing-header: calc(100vh - 80px);
+
+  --shadow-btnShadowLg: rgba(255, 255, 255, 0.2) 0px 0px 0px 6px;
+  --shadow-btnShadowMd: rgba(255, 255, 255, 0.2) 0px 0px 0px 4px;
+  --shadow-btnShadowSm: rgba(255, 255, 255, 0.2) 0px 0px 0px 2px;
+  --shadow-menu: 0px 0px 11px rgba(0, 0, 0, 0.25);
+
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 0px;
+  width: 100%;
+
+  @variant 2xl {
+    max-width: 1536px;
+  }
+}
